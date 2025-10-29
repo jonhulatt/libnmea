@@ -43,7 +43,7 @@ typedef struct {
 } nmea_position;
 
 /* NMEA sentence max length, including \r\n (chars) */
-#define NMEA_MAX_LENGTH		82
+#define NMEA_MAX_LENGTH		102
 
 /* NMEA sentence endings, should be \r\n according the NMEA 0183 standard */
 #define NMEA_END_CHAR_1		'\r'
