@@ -121,6 +121,11 @@ parse(nmea_parser_s *parser, char *value, int val_index)
 		}
 		break;
 
+	case NMEA_GPRMC_MODE:
+		/* Parse the mode */
+		data->mode = *value;
+		break;
+
 	default:
 		break;
 	}

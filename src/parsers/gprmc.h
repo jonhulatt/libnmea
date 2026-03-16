@@ -19,6 +19,10 @@ typedef struct {
 	//The direction of the magnetic variation determines whether or not it
 	//is additive - Easterly means subtract magvar_deg from track_deg and
 	//westerly means add magvar_deg to track_deg for the correct course.
+
+	// valid in nmea 2.3 and above, indicates the type of fix
+	unsigned char mode;
+
 	bool valid;
 } nmea_gprmc_s;
 
@@ -34,4 +38,5 @@ typedef struct {
 #define NMEA_GPRMC_DATE			8
 #define NMEA_GPRMC_MAGVAR_DEG		9
 #define NMEA_GPRMC_MAGVAR_CARDINAL	10
+#define NMEA_GPRMC_MODE			11
 #endif  /* INC_NMEA_GPRMC_H */
